@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Corral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+  <body>
+    <header class="encabezado">
+      <nav class="barra-navegacion">
+        <!-- Logo -->
+        <a class="logo" href="../index.html">
+          <img src="../img/header.img.png" alt="Logo Alfa Corral" width="100">
+        </a>
+
+        <!-- Botón hamburguesa para móvil -->
+        <button class="boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="icono-menu"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="menu colapsar" id="menuPrincipal">
+          <ul class="lista-menu">
+            <li><a class="menu-enlace" href="../index.html">Inicio</a></li>
+            <li><a class="menu-enlace" href="actividades.html">Actividades</a></li>
+            <li><a class="menu-enlace" href="eventos.html">Eventos</a></li>
+            <li><a class="menu-enlace" href="fotos.html">Fotos</a></li>
+            <li><a class="menu-enlace link-activo" href="contacto.html" aria-current="page">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contenido-principal contenedor">
+      <!-- Sección Contacto -->
+      <section class="seccion-contacto">
+        <div class="fila alineacion-centro">
+          <!-- Formulario -->
+          <div class="columna-mitad">
+            <h2 class="titulo-seccion">Contactanos</h2>
+            <p class="texto-descriptivo">
+              ¿Querés saber más sobre nuestras actividades o reservar una experiencia? Escribinos y con gusto te
+              responderemos. Estamos para ayudarte a planear una visita inolvidable en Alfa Corral.
+            </p>
+
+            <form class="formulario-contacto">
+              <div class="fila">
+                <div class="columna">
+                  <input type="text" class="campo-texto" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class="columna">
+                  <input type="email" class="campo-texto" placeholder="Email" required>
+                </div>
+              </div>
+
+              <div class="grupo-campo">
+                <select class="campo-select" required>
+                  <option value="">¿Sobre qué quiero saber más información?</option>
+                  <option value="Actividades">Actividades</option>
+                  <option value="Eventos">Eventos</option>
+                  <option value="Otros">Otros</option>
+                </select>
+              </div>
+
+              <div class="grupo-campo">
+                <textarea class="campo-texto" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+
+              <button type="submit" class="boton-secundario">Enviar</button>
+            </form>
+          </div>
+
+          <!-- Imagen -->
+          <div class="columna-mitad imagen-contacto">
+            <img src="../img/contacto.img.png" alt="Caballo en campo" class="imagen-redondeada">
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Ubicación -->
+      <section class="seccion-ubicacion">
+        <h2 class="titulo-seccion centrado">¿DÓNDE ENCONTRARNOS?</h2>
+        <p class="texto-descriptivo centrado">
+          Alfa Corral te espera en un entorno natural único, a pocos minutos de la ciudad. Vení a disfrutar del campo, el
+          aire libre y los caballos en un lugar pensado para relajarte y conectar con lo esencial. <br>
+          Unquillo, Córdoba
+        </p>
+
+        <div class="fila espacio-entre">
+          <!-- Imagen -->
+          <div class="columna-mitad">
+            <img src="../img/ubicacion.img.jpeg" alt="Personas a caballo en la naturaleza" class="imagen-redondeada">
+          </div>
+
+          <!-- Mapa -->
+          <div class="columna-mitad">
+            <iframe
+              src="https://www.google.com/maps/place/Centro+Ecuestre+Alfacorral/@-31.2385668,-64.289998,17z/data=!3m1!4b1!4m6!3m5!1s0x943282e1e85a2121:0x76a2911507eaef29!8m2!3d-31.2385668!4d-64.289998!16s%2Fg%2F11fxvnv4f_?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYwMi4wIKXMDSoASAFQAw%3D%3D"
+              class="mapa-ubicacion" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="fila">
+                <!-- Logo -->
+                <div class="logo-footer">
+                    <img src="../img/header.img.png" alt="Logo Alfa Corral" class="logo-imagen">
+                </div>
+
+                <!-- Texto -->
+                <div class="texto-footer">
+                    <p>&copy; 2025 Alfa Corral. Todos los derechos reservados.</p>
+                </div>
+
+                <!-- Redes -->
+                <div class="redes-footer">
+                    <a href="#" class="link-red">WhatsApp</a>
+                    <a href="https://www.facebook.com/AlfaCorral" target="_blank" class="link-red">Facebook</a>
+                    <a href="https://www.instagram.com/alfa_corral" target="_blank" class="link-red">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
