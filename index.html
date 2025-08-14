@@ -13,26 +13,37 @@
   <body>
     <header class="encabezado">
         <nav class="barra-navegacion">
-            <!-- Logo -->
-            <a class="logo" href="../index.html">
-                <img src="img/header.img.png" alt="Logo Alfa Corral" width="100">
-            </a>
 
-            <!-- Botón hamburguesa -->
-            <button class="boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
-                <span class="icono-menu"></span>
-            </button>
-
-            <!-- Menú -->
-            <div class="menu colapsar" id="menuPrincipal">
-                <ul class="lista-menu">
-                    <li><a class="menu-enlace link-activo" href="../index.html">Inicio</a></li>
-                    <li><a class="menu-enlace" href="html/actividades.html">Actividades</a></li>
-                    <li><a class="menu-enlace" href="html/eventos.html">Eventos</a></li>
-                    <li><a class="menu-enlace" href="html/fotos.html">Fotos</a></li>
-                    <li><a class="menu-enlace" href="html/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <nav class="navbar navbar-expand-lg bg-navbar-propio">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/header.img.png" alt="Logo Alfa Corral" width="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="html/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="html/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="html/fotos.html">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            
         </nav>
     </header>
 
